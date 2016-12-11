@@ -1,0 +1,197 @@
+﻿@charset "utf-8";
+
+body, ul, h1{ margin: 0; font-family: "Microsoft YaHei","simsun",Arial; font-size:14px;  color:#666; }
+
+
+
+
+img{border: none; vertical-align: middle;}
+
+h2{ color: #999; margin-top: 20px;margin-bottom: 20px; }
+
+h3{ color: #999; margin-top: 20px;margin-bottom: 20px;}
+
+ul{ padding-left: 0; list-style: none; }
+
+.container{ width: 1200px; margin: 0 auto; }
+
+.clearfix{ overflow: hidden; _zoom:1%; }
+
+
+
+nav:not(.mm-menu) { display: none; }
+
+.headernav { display: none; }
+
+.headernav { text-align: center; }
+
+.headernav {
+	background: transprent;
+	font-size: 16px;
+	font-weight: bold;
+	color: #09C;
+	line-height: 40px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 40px;
+	padding: 0 50px;
+}
+
+.headernav.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.mobilenav {
+	color: #000;
+	font-size: 26px !important;
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 8px;
+}
+
+.mobilenav:hover {
+	color: #666;
+}
+
+.top h1 a{ display: block; width: 225px; height: 60px; background-image: url(../images/logo.png); }
+
+.tel{height: 60px;background-position:right 0; background-image: url(../images/tel.png); text-indent: -9999px;background-repeat: no-repeat;}
+
+.nav{background-color: #1DA2F1;height: 40px;line-height: 40px;}
+
+.nav .home{font-size: 2rem;}
+.nav>ul>li{ float: left; }
+
+.nav ul li a{display: block; width: 120px;padding-left: 20px;padding-right: 20px;text-align: center; text-decoration: none; color: #fff;}
+
+.nav ul li a:hover{ background-color: #E71376; }
+
+.subnav{ position: absolute; background-color: rgba(42,164,238,0.5); }
+
+.nav>ul>li .subnav{ display: none; }
+.nav>ul>li:hover .subnav{display: block;}
+
+.banner{ background-color: #ccc; text-align: center;  }
+.banner img{ max-width: 100%; }
+
+
+/*幻灯*/
+#owl-demo { width: 100%; margin-left: auto; margin-right: auto;}
+#owl-demo .item{ display: block;}
+#owl-demo img { display: block; width: 100%;}
+
+.owl-theme .owl-controls { position: relative; margin-top: -30px; }
+
+.teamwork{overflow:hidden;}
+
+.person-intro{ width: 90%; margin-top: 0;margin-right: auto; margin-bottom: 20px; margin-left: auto; }
+
+.person-intro img{ width: 100%; }
+.person-intro a{
+	display: block;
+ width: 100px;
+ padding: 10px; 
+ background-color: #1Da2f1;
+  color: #fff; 
+  text-decoration:none; 
+  text-align: center;
+ -webkit-transition: all 0.3s ;
+-o-transition: all 0.3s ;
+transition: all 0.3s ;
+}
+
+.person-intro a:hover{background-color: #E71376;}
+
+.person-intro a i{ margin-left: 5px; }
+
+.booking p{
+	background:#09f;
+	padding-top:30px;
+	padding-bottom: 30px;
+	text-align: center;
+	margin:30px 0;
+	
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.booking p a{text-decoration:none; display:inline-block; background:#fff; padding:6px 15px; line-height:normal; margin-left:20px}
+
+
+.about {margin: 40px 0;}
+
+.about>div>div{width: 80%; margin:0 auto;}
+
+.about p{ margin-top: 20px;margin-bottom: 20px;text-indent: 0;}
+
+.about p strong{ font-size: 1.5rem; }
+
+.about div a{
+	padding: 5px 10px;
+	background-color: #1DA2F1;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.4rem;
+	-webkit-transform:all 0.3s ;
+	-o-transform:all 0.3s ;
+	transform:all 0.3s ;
+}
+
+.about div a:hover{background-color: #E71376;}
+
+
+.partner{ width: 1080px;}
+
+.footer{ padding-top: 70px;padding-bottom: 70px; background-color: #0099cc; ;text-align: center;}
+
+.footer p{color: white;}
+
+
+/*UI响应式*/
+
+
+
+  
+@media screen and (max-width:1200px) {
+	.container {
+		width: 94%;					
+	}		
+	.nav li a {
+		padding-left: 20px;
+		padding-right: 20px;
+	}	
+}	
+		
+@media screen and (max-width:968px) {
+	.nav li a {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width:768px) {
+	body { background: #fff; }
+	.header { display: none; }
+	.headernav { display: block; }
+	.about { margin-top: 40px; }
+	.about div { margin-bottom: 40px;  }
+	.about p { margin-right: 0 ; }
+	.about .video { text-align: center; }
+	.footer { width: 100%; }
+	.booking p{  position: relative;  }
+	.booking p a{ position: absolute; top: 90px; left: 50%;margin-left: -60px;width: 100px; height: 30px; background:#1Da2f1 ; color: #fff;}
+
+}
+@media screen and(max-width: 400px) {
+	.booking p a{ top: 300px; }
+	
+}
+
+
+	
